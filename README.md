@@ -63,84 +63,85 @@ Welcome to the **Library Management System** — a modern, secure, and efficient
 
 ## Project Structure
 
-Library-Management/
-  ├── MultipleFiles/
-  │   ├── .gitignore
-  │   ├── .mvn/
-  │   │   ├── wrapper/
-  │   │   │   ├── maven-wrapper.properties
-  │   │   │   └── mvnw
-  │   │   └── mvnw.cmd
-  │   ├── src/
-  │   │   ├── main/
-  │   │   │   ├── java/
-  │   │   │   │   └── com/
-  │   │   │   │       └── lbm/
-  │   │   │   │           ├── config/
-  │   │   │   │           │   ├── GlobalExceptionHandler.java
-  │   │   │   │           │   ├── JacksonConfig.java
-  │   │   │   │           │   ├── MongoConfig.java
-  │   │   │   │           │   └── SecurityConfig.java
-  │   │   │   │           ├── controller/
-  │   │   │   │           │   ├── BookController.java
-  │   │   │   │           │   ├── LibraryController.java
-  │   │   │   │           │   └── UserController.java
-  │   │   │   │           ├── dto/
-  │   │   │   │           │   ├── ApiResponse.java
-  │   │   │   │           │   ├── BookDto.java
-  │   │   │   │           │   ├── BookStatusDto.java
-  │   │   │   │           │   ├── LibraryDto.java
-  │   │   │   │           │   ├── LocationDto.java
-  │   │   │   │           │   └── UserDto.java
-  │   │   │   │           ├── entity/
-  │   │   │   │           │   ├── Book.java
-  │   │   │   │           │   ├── BookStatus.java
-  │   │   │   │           │   ├── Library.java
-  │   │   │   │           │   ├── User.java
-  │   │   │   │           │   └── core/
-  │   │   │   │           │       ├── BaseEntity.java
-  │   │   │   │           │       └── LocationData.java
-  │   │   │   │           ├── enum/
-  │   │   │   │           │   ├── Days.java
-  │   │   │   │           │   └── Role.java
-  │   │   │   │           ├── exception/
-  │   │   │   │           │   └── EntityNotFoundException.java
-  │   │   │   │           ├── filter/
-  │   │   │   │           │   └── JwtAuthenticationFilter.java
-  │   │   │   │           ├── mapper/
-  │   │   │   │           │   ├── BookMapper.java
-  │   │   │   │           │   ├── BookStatusMapper.java
-  │   │   │   │           │   ├── LibraryMapper.java
-  │   │   │   │           │   └── LocationMapper.java
-  │   │   │   │           ├── repository/
-  │   │   │   │           │   ├── BookRepository.java
-  │   │   │   │           │   ├── BookStatusRepository.java
-  │   │   │   │           │   ├── LibraryRepository.java
-  │   │   │   │           │   └── UserRepository.java
-  │   │   │   │           ├── services/
-  │   │   │   │           │   ├── BookService.java
-  │   │   │   │           │   ├── JwtService.java
-  │   │   │   │           │   ├── LibraryService.java
-  │   │   │   │           │   └── UserService.java
-  │   │   │   │           └── utils/
-  │   │   │   │               ├── AppTimeZoneUtil.java
-  │   │   │   │               ├── AuthFilterHeader.java
-  │   │   │   │               ├── GlobalMapping.java
-  │   │   │   │               ├── MongoErrorMessageUtil.java
-  │   │   │   │               ├── SearchUtil.java
-  │   │   │   │               └── SecurityUtil.java
-  │   │   │   └── resources/
-  │   │   │       ├── application.yml
-  │   │   │       └── static/
-  │   │   │           └── (static files if any)
-  │   │   └── test/
-  │   │       └── java/
-  │   │           └── com/
-  │   │               └── lbm/
-  │   │                   └── (test classes)
-  │   ├── pom.xml
-  │   └── README.md
-  └── LICENSE
+    Library-Management/
+    ├── MultipleFiles/
+    │   ├── .gitignore
+    │   ├── .mvn/
+    │   │   ├── wrapper/
+    │   │   │   ├── maven-wrapper.properties
+    │   │   │   └── mvnw
+    │   │   └── mvnw.cmd
+    │   ├── src/
+    │   │   ├── main/
+    │   │   │   ├── java/
+    │   │   │   │   └── com/
+    │   │   │   │       └── lbm/
+    │   │   │   │           ├── config/
+    │   │   │   │           │   ├── GlobalExceptionHandler.java
+    │   │   │   │           │   ├── JacksonConfig.java
+    │   │   │   │           │   ├── MongoConfig.java
+    │   │   │   │           │   └── SecurityConfig.java
+    │   │   │   │           ├── controller/
+    │   │   │   │           │   ├── BookController.java
+    │   │   │   │           │   ├── LibraryController.java
+    │   │   │   │           │   └── UserController.java
+    │   │   │   │           ├── dto/
+    │   │   │   │           │   ├── ApiResponse.java
+    │   │   │   │           │   ├── BookDto.java
+    │   │   │   │           │   ├── BookStatusDto.java
+    │   │   │   │           │   ├── LibraryDto.java
+    │   │   │   │           │   ├── LocationDto.java
+    │   │   │   │           │   └── UserDto.java
+    │   │   │   │           ├── entity/
+    │   │   │   │           │   ├── Book.java
+    │   │   │   │           │   ├── BookStatus.java
+    │   │   │   │           │   ├── Library.java
+    │   │   │   │           │   ├── User.java
+    │   │   │   │           │   └── core/
+    │   │   │   │           │       ├── BaseEntity.java
+    │   │   │   │           │       └── LocationData.java
+    │   │   │   │           ├── enum/
+    │   │   │   │           │   ├── Days.java
+    │   │   │   │           │   └── Role.java
+    │   │   │   │           ├── exception/
+    │   │   │   │           │   └── EntityNotFoundException.java
+    │   │   │   │           ├── filter/
+    │   │   │   │           │   └── JwtAuthenticationFilter.java
+    │   │   │   │           ├── mapper/
+    │   │   │   │           │   ├── BookMapper.java
+    │   │   │   │           │   ├── BookStatusMapper.java
+    │   │   │   │           │   ├── LibraryMapper.java
+    │   │   │   │           │   └── LocationMapper.java
+    │   │   │   │           ├── repository/
+    │   │   │   │           │   ├── BookRepository.java
+    │   │   │   │           │   ├── BookStatusRepository.java
+    │   │   │   │           │   ├── LibraryRepository.java
+    │   │   │   │           │   └── UserRepository.java
+    │   │   │   │           ├── services/
+    │   │   │   │           │   ├── BookService.java
+    │   │   │   │           │   ├── JwtService.java
+    │   │   │   │           │   ├── LibraryService.java
+    │   │   │   │           │   └── UserService.java
+    │   │   │   │           └── utils/
+    │   │   │   │               ├── AppTimeZoneUtil.java
+    │   │   │   │               ├── AuthFilterHeader.java
+    │   │   │   │               ├── GlobalMapping.java
+    │   │   │   │               ├── MongoErrorMessageUtil.java
+    │   │   │   │               ├── SearchUtil.java
+    │   │   │   │               └── SecurityUtil.java
+    │   │   │   └── resources/
+    │   │   │       ├── application.yml
+    │   │   │       └── static/
+    │   │   │           └── (static files if any)
+    │   │   └── test/
+    │   │       └── java/
+    │   │           └── com/
+    │   │               └── lbm/
+    │   │                   └── (test classes)
+    │   ├── pom.xml
+    │   └── README.md
+    └── LICENSE
+
 
 ### For Set Jwt Key
 Click on your project Configuration -> Edit Configuration -> 
