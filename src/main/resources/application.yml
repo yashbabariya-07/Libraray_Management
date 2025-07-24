@@ -7,4 +7,4 @@ spring:
       uri: mongodb://localhost:27017/lbm
 
 public:
-  endpoints: /user/register,/user/login,/user/get,/user/update,/library/get,/library/id/{id},/book/get,/book/library/{id},/book/name/{name},/book/id/{id},/book/search/{search}
+  endpoints: /user/register,/user/login,/user/get,/user/update,/library/get,/library/id/{id},/book/get,/book/library/{id},/book/name/{name},/book/id/{id},/book/search/{search},/v3/api-docs/**,/swagger-ui/**,/swagger-ui.html,/swagger-ui/index.html,/swagger-resources/**,/webjars/**

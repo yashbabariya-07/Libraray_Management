@@ -3,6 +3,7 @@ package com.lbm.controller;
 import com.lbm.dto.response.ApiResponse;
 import com.lbm.dto.LibraryDto;
 import com.lbm.services.LibraryService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/library")
+@SecurityRequirement(name = "Bearer Token")
 public class LibraryController {
 
     private final LibraryService libraryService;

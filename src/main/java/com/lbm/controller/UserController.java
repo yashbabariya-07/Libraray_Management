@@ -5,6 +5,7 @@ import com.lbm.dto.request.JwtRequest;
 import com.lbm.dto.response.JwtResponse;
 import com.lbm.dto.UserDto;
 import com.lbm.services.UserService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -28,17 +29,20 @@ public class UserController {
     }
 
     @GetMapping("/get")
+    @SecurityRequirement(name = "Bearer Token")
     public UserDto getUser() {
         return userService.getCurrentUser();
     }
 
     @PatchMapping("/update")
+    @SecurityRequirement(name = "Bearer Token")
     public UserDto updateUser(@RequestBody UserDto userDto){
         return userService.updateUser(userDto);
     }
 
     @PreAuthorize("hasRole('LIBRARIAN')")
     @DeleteMapping("/delete/{uid}")
+    @SecurityRequirement(name = "Bearer Token")
     public ApiResponse deleteUser(
             @PathVariable String uid) {
         return userService.deleteUser(uid);

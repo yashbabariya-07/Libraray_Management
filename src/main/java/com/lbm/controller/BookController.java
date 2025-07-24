@@ -5,6 +5,7 @@ import com.lbm.dto.BookStatusDto;
 import com.lbm.dto.LibraryDto;
 import com.lbm.dto.response.ApiResponse;
 import com.lbm.services.BookService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/book")
 @AllArgsConstructor
+@SecurityRequirement(name = "Bearer Token")
 public class BookController {
 
     private final BookService bookService;
