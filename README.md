@@ -3,7 +3,7 @@
 Welcome to the **Library Management System** — a modern, secure, and efficient Spring Boot application designed to simplify library operations. Whether you're a librarian managing book inventories or a user borrowing your favorite reads, this system empowers you with seamless control and accessibility.
 
 
-## 🚀 Features
+## Features
 
 - **User Management**
   - Register as a user or librarian
@@ -148,7 +148,7 @@ Click on your project Configuration -> Edit Configuration ->
 Set below key to your Environment variables:
 spring.jwt.secret=Your_Key
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - Spring Boot 3.4.4
 - Java 17
@@ -159,6 +159,15 @@ spring.jwt.secret=Your_Key
 - Lombok for boilerplate code reduction
 - Maven for project and dependency management
 - RESTful API architecture
+
+## Swagger Documentation
+
+- The application uses Swagger for API documentation. You can access the Swagger UI at http://localhost:8080/swagger-ui.html after running the application.
+- To view the API documentation, ensure you have the Swagger dependencies included in your pom.xml file. If you are using this project as a template, the dependencies are already included.
+- You can also access the OpenAPI specification at http://localhost:8080/v3/api-docs.
+- First Go to user controller and register a user, then login to get the JWT token. After that, you can use the token to access the secured endpoints.
+- Paste the JWT token in the Authorize section of the Swagger UI to authenticate your requests.
+- Now you can explore the API endpoints and test them directly from the Swagger UI.
 
 ### Prerequisites
 
