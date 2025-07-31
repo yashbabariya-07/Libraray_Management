@@ -1,6 +1,3 @@
-# Libraray_Management
-Spring Boot Java Project.
-##
 # Library Management System
 
 Welcome to the **Library Management System** — a modern, secure, and efficient Spring Boot application designed to simplify library operations. Whether you're a librarian managing book inventories or a user borrowing your favorite reads, this system empowers you with seamless control and accessibility.
@@ -146,7 +143,8 @@ Welcome to the **Library Management System** — a modern, secure, and efficient
     └── LICENSE
 
 
-### For Set Jwt Key
+## For Set Jwt Key
+
 Click on your project Configuration -> Edit Configuration -> 
 Set below key to your Environment variables:
 spring.jwt.secret=Your_Key
@@ -172,7 +170,7 @@ spring.jwt.secret=Your_Key
 - Paste the JWT token in the Authorize section of the Swagger UI to authenticate your requests.
 - Now you can explore the API endpoints and test them directly from the Swagger UI.
 
-### Prerequisites
+## Prerequisites
 
 - Java 17 SDK installed
 - Maven 3.8+ installed
