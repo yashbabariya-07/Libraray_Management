@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # Libraray_Management
 Spring Boot Java Project.
 ##
-=======
 # Library Management System
 
 Welcome to the **Library Management System** — a modern, secure, and efficient Spring Boot application designed to simplify library operations. Whether you're a librarian managing book inventories or a user borrowing your favorite reads, this system empowers you with seamless control and accessibility.
@@ -179,4 +177,3 @@ spring.jwt.secret=Your_Key
 - Java 17 SDK installed
 - Maven 3.8+ installed
 - MongoDB instance running and accessible
->>>>>>> abe0fd358ef604e0437ba87cac1f6fb0fe2bfda9
